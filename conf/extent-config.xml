@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme -->
+		<!-- standard, dark -->
+		<theme>dark</theme>
+
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+		<!-- title of the document -->
+		<documentTitle>Trello Automation Report</documentTitle>
+
+		<!-- report name - displayed at top-nav -->
+		<!-- report name - displayed at top-nav -->
+
+		<!-- <reportName>Test Automation Report</reportName> -->
+		<reportName>
+		
+		 		 <![CDATA[
+		  <img src="https://super-monitoring.com/blog/wp-content/uploads/2019/06/trello.png"/
+          <img src="data:image/png;base64,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"/>
+           
+          
+        ]]>   
+			
+
+		</reportName>
+
+
+		<!-- location of charts in the test view -->
+		<!-- top, bottom -->
+		<testViewChartLocation>bottom</testViewChartLocation>
+
+		<!-- custom javascript -->
+		<scripts>
+        <![CDATA[
+            $(document).ready(function() {
+
+            });
+        ]]>
+        
+        <js>
+		<![CDATA[
+		var element=document.getElementsByClassName("left panel-name")[0];
+		element.innerHTML='<font size="5">Smart Recruit POC</font>';
+		element.style.fontSize = "18px";
+		element.style.color = "#8bff00";
+		]]>
+		</js>
+		</scripts>
+		
+		<scripts>
+        <![CDATA[
+            $(document).ready(function() {
+
+            });
+        ]]>
+       
+        <js>
+        <![CDATA[
+        var element=document.getElementsByClassName("left panel-name")[0];
+        element.innerHTML='<font size="5">Trello Automation Report</font>';
+        element.style.fontSize = "18px";
+        element.style.color = "#8bff00";
+        ]]>
+
+        <![CDATA[
+        var element=document.getElementsByClassName('view-summary')[0].childNodes[1];
+        element.innerHTML='<font size="5">Automation Report Summary</font>';
+        element.style.fontSize = "12px";
+        element.style.color = "#8bff00";
+        ]]>
+        </js>
+        </scripts>
+		
+
+		<!-- custom styles -->
+		<styles>
+        <![CDATA[
+            .report-name { padding-left: 10px; } .report-name > img { float: 
+      left;height: 90%;margin-left: 30px;margin-top: 2px;width: auto; }
+        ]]>
+		</styles>
+		 
+		
+	</configuration>
+</extentreports>

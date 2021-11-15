@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests"
+	configfailurepolicy="continue" name="Trello">
+	<listeners>
+		<listener class-name="com.tyss.trello.listeners.TestListener" />
+	</listeners>
+
+
+	<test thread-count="1" name="POC_Test1">
+		<parameter name="browserName" value="chrome" />
+    <classes>
+     <class name="com.tyss.trello.scripts.Trello_TC_01_CreateCard"/>
+  <!-- <class name="com.tyss.trello.scripts.Trello_TC_02_MoveCard"/> 
+   <class name="com.tyss.trello.scripts.Trello_TC_03_CopyCard"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_04_AddDescription"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_05_AddComment"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_06_CreateCheckList"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_07_AddLabel"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_08_CreateTemplate"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_09_ArchiveCard"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_10_CloseBoard"/>-->
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test thread-count="1" name="POC_Test2">
+		<parameter name="browserName" value="firefox" />
+    <classes>
+     <class name="com.tyss.trello.scripts.Trello_TC_01_CreateCard"/>
+       <!--  <class name="com.tyss.trello.scripts.Trello_TC_05_AddComment"/>
+    <class name="com.tyss.trello.scripts.Trello_TC_06_CreateCheckList"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_07_AddLabel"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_03_CopyCard"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_01_CreateCard"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_05_AddComment"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_07_AddLabel"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_10_CloseBoard"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_02_MoveCard"/>
+      <class name="com.tyss.trello.scripts.Trello_TC_04_AddDescription"/>-->
+    </classes>
+  </test> <!--  Test -->
+
+</suite> <!-- Trello -->

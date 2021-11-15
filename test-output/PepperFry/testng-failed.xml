@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [PepperFry]">
+  <listeners>
+    <listener class-name="com.tyss.acttime.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="POC_Test1(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="assignmentscripts.PepperFry">
+        <methods>
+          <include name="launchApp"/>
+          <include name="create"/>
+          <include name="killTask"/>
+          <include name="createFiles"/>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- assignmentscripts.PepperFry -->
+    </classes>
+  </test> <!-- POC_Test1(failed) -->
+</suite> <!-- Failed suite [PepperFry] -->

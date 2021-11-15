@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="3" parallel="tests" name="Failed suite [Trello]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tyss.trello.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="POC_Test2(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.tyss.trello.scripts.Trello_TC_01_CreateCard">
+        <methods>
+          <include name="launchApp"/>
+          <include name="createTest"/>
+          <include name="createFiles"/>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+          <include name="killTask"/>
+        </methods>
+      </class> <!-- com.tyss.trello.scripts.Trello_TC_01_CreateCard -->
+    </classes>
+  </test> <!-- POC_Test2(failed) -->
+</suite> <!-- Failed suite [Trello] -->
